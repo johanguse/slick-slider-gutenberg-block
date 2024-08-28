@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "slick-slider-gutenberg-block/slick-slider-gutenberg-block",
+  "title": "Slick Slider Gutenberg Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "A custom slider block using Slick Slider.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "slick-slider-gutenberg-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": true
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 1
+    },
+    "speed": {
+      "type": "number",
+      "default": 500
+    },
+    "slidesToScroll": {
+      "type": "number",
+      "default": 1
+    },
+    "centerMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "centerPadding": {
+      "type": "string",
+      "default": "0px"
+    },
+    "variableWidth": {
+      "type": "boolean",
+      "default": false
+    },
+    "adaptiveHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "fade": {
+      "type": "boolean",
+      "default": false
+    },
+    "cssEase": {
+      "type": "string",
+      "default": "linear"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 2000
+    }
+  }
+}

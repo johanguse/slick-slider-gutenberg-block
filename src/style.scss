@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$slick-font-path: '~@fonts/';
+@import 'vendor/slick/slick.scss';
+@import 'vendor/slick/slick-theme.scss';
+
+.wp-block-slick-slider-gutenberg-block-slick-slider-gutenberg-block {
+    .slick-slider-container {
+        &[data-show-arrows="false"] {
+            .slick-prev,
+            .slick-next {
+                display: none !important;
+            }
+        }
+
+        &[data-show-dots="false"] {
+            .slick-dots {
+                display: none !important;
+            }
+        }
+
+        .wp-block-image {
+            margin: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
